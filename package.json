@@ -31,7 +31,7 @@
     "gas-price-oracle": "^0.4.7",
     "ioredis": "^4.14.1",
     "node-fetch": "^2.6.7",
-    "torn-token": "git+https://github.com/jovoel/cyclone-token.git#98e1c9d728bbe2bcc5f764858b54ff6e992e5afd",
+    "torn-token": "git+https://github.com/jovoel/cyclone-token.git#17b0f47a1f08a9252dc5a78655ffb45aaa5f8a8e",
     "tx-manager": "^0.4.8",
     "uuid": "^8.3.0",
     "web3": "^1.3.0",
