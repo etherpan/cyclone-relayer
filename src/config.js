@@ -3,7 +3,7 @@ require('dotenv').config()
 const { jobType } = require('./constants')
 const tornConfig = require('torn-token')
 module.exports = {
-  netId: Number(process.env.NET_ID) || 5,
+  netId: Number(process.env.NET_ID) || 943 || 5,
   httpRpcUrl: process.env.HTTP_RPC_URL,
   wsRpcUrl: process.env.WS_RPC_URL,
   oracleRpcUrl: process.env.ORACLE_RPC_URL || 'https://mainnet.infura.io/',
