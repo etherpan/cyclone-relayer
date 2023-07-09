@@ -77,6 +77,10 @@ function getArgsForOracle() {
       tokenAddresses.push(data.tokenAddress)
       oneUintAmount.push(toBN('10').pow(toBN(data.decimals.toString())).toString())
       currencyLookup[data.tokenAddress] = currency
+    } else if (currency !=='pls') {
+      tokenAddresses.push(data.tokenAddress)
+      oneUintAmount.push(toBN('10').pow(toBN(data.decimals.toString())).toString())
+      currencyLookup[data.tokenAddress] = currency
     }
   })
   return { tokenAddresses, oneUintAmount, currencyLookup }

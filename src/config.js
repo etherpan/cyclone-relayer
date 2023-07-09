@@ -18,7 +18,7 @@ module.exports = {
   rewardAccount: process.env.REWARD_ACCOUNT,
   governanceAddress: '0xc91490001928D8C5C6E826BDc56aA2B506450A2A',
   tornadoGoerliProxy: '0xaD52EEC24888A13FEc6b87E30c26f52C43d48F10',
-  tornadoEthProxy: '0x969BB4746Eb375dD15d743B3f5f3bCcD6e2A66cE',
+  tornadoEthProxy: '0x89071b8599e35D2ef1e9212B1BDF5986697CFe10',
   gasLimits: {
     [jobType.TORNADO_WITHDRAW]: 390000,
     WITHDRAW_WITH_EXTRA: 700000,

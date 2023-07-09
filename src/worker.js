@@ -134,6 +134,10 @@ async function checkTornadoFee({ args, contract }) {
       desiredFee = expense.add(feePercent)
       break
     }
+    case 'pls': {
+      desiredFee = expense.add(feePercent)
+      break
+    }
     default: {
       desiredFee = expense
         .add(refund)
@@ -185,7 +189,7 @@ async function getTxObject({ data }) {
   let calldata = contract.methods.withdraw(data.contract, data.proof, ...data.args).encodeABI()
   console.log('debug calldata', calldata, data.contract, data.proof, ...data.args)
 
-  if (isOldProxy && getInstance(data.contract).currency !== 'eth') {
+  if (isOldProxy && getInstance(data.contract).currency !== 'eth' || getInstance(data.contract).currency !== 'pls') {
     contract = new web3.eth.Contract(tornadoABI, data.contract)
     calldata = contract.methods.withdraw(data.proof, ...data.args).encodeABI()
   }
