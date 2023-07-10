@@ -186,8 +186,8 @@ async function getTxObject({ data }) {
   // if (data.type === jobType.TORNADO_WITHDRAW) {
   let { contract, isOldProxy } = await getProxyContract()
 
-  let calldata = contract.methods.withdraw(data.contract, data.proof, ...data.args).encodeABI()
   console.log('debug calldata', calldata, data.contract, data.proof, ...data.args)
+  let calldata = contract.methods.withdraw(data.contract, data.proof, ...data.args).encodeABI()
 
   if (isOldProxy && getInstance(data.contract).currency !== 'eth' || getInstance(data.contract).currency !== 'pls') {
     contract = new web3.eth.Contract(tornadoABI, data.contract)
