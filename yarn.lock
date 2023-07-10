@@ -4071,9 +4071,9 @@ toidentifier@1.0.1:
   resolved "https://registry.yarnpkg.com/toidentifier/-/toidentifier-1.0.1.tgz#3be34321a88a820ed1bd80dfaa33e479fbb8dd35"
   integrity sha512-o5sSPKEkg/DIQNmH43V0/uerLrpzVedkUh8tGNvaeXpfpuwjKenlSox/2O/BTlZUtEe+JG7s5YhEz608PlAHRA==
 
-"torn-token@git+https://github.com/jovocom/tumbler-token.git#2b3b0b47bff6963892995b1762bad359b4a393de":
+"torn-token@git+https://github.com/jovoel/cyclone-token.git#fff3be8c4e4bf97e2faa45ec30ad3136f65518e1":
   version "1.0.8"
-  resolved "git+https://github.com/jovocom/tumbler-token.git#2b3b0b47bff6963892995b1762bad359b4a393de"
+  resolved "git+https://github.com/jovoel/cyclone-token.git#fff3be8c4e4bf97e2faa45ec30ad3136f65518e1"
   dependencies:
     "@openzeppelin/contracts" "^4.7.2"
     eth-sig-util "^2.5.3"
