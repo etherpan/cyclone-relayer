@@ -31,9 +31,9 @@ ajv.addKeyword('isFeeRecipient', {
   validate: (schema, data) => {
     console.log('two account is different->', rewardAccount, data)
     try {
-      return toChecksumAddress(rewardAccount) === toChecksumAddress(data)
+      return toChecksumAddress(rewardAccount.toLowerCase()) === toChecksumAddress(data.toLowerCase())
     } catch (e) {
-      console.log('two account is different->', rewardAccount, data)
+      console.log('two account is different->', rewardAccount.toLowerCase(), data.toLowerCase())
       return false
     }
   },
