@@ -29,11 +29,11 @@ ajv.addKeyword('isKnownContract', {
 
 ajv.addKeyword('isFeeRecipient', {
   validate: (schema, data) => {
-    console.log('two account is different->', rewardAccount, data)
+    // console.log('two account is different->1', rewardAccount, data)
     try {
       return toChecksumAddress(rewardAccount.toLowerCase()) === toChecksumAddress(data.toLowerCase())
     } catch (e) {
-      console.log('two account is different->', rewardAccount.toLowerCase(), data.toLowerCase())
+      console.log('two account is different->2', rewardAccount.toLowerCase(), data.toLowerCase())
       return false
     }
   },
