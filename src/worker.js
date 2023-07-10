@@ -189,7 +189,7 @@ async function getTxObject({ data }) {
   console.log('debug calldata', data.contract, data.proof, ...data.args)
   let calldata = contract.methods.withdraw(data.contract, data.proof, ...data.args).encodeABI()
 
-  if (isOldProxy && getInstance(data.contract).currency !== 'eth' || getInstance(data.contract).currency !== 'pls') {
+  if (isOldProxy && getInstance(data.contract).currency !== 'eth') {
     contract = new web3.eth.Contract(tornadoABI, data.contract)
     calldata = contract.methods.withdraw(data.proof, ...data.args).encodeABI()
   }
