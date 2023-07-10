@@ -163,7 +163,7 @@ async function checkTornadoFee({ args, contract }) {
 
 async function getProxyContract() {
   let proxyAddress
-  if (netId === 5 || ) {
+  if (netId === 5) {
     proxyAddress = tornadoGoerliProxy
   } else {
     // proxyAddress = await resolver.resolve(torn.tornadoRouter.address)
